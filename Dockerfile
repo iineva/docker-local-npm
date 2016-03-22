@@ -6,8 +6,7 @@ VOLUME /data
 WORKDIR /data
 
 RUN apt-get update
-RUN apt-get install python -f
-
+RUN apt-get install python -y
 RUN npm install -g local-npm
 
 ENV HOST_IP='127.0.0.1'
