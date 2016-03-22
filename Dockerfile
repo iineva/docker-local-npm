@@ -5,6 +5,8 @@ MAINTAINER Steven <ineva@qq.com>
 VOLUME /data
 WORKDIR /data
 
+RUN apt-get update
+RUN apt-get install python
 
 RUN npm install -g local-npm
 
