@@ -6,7 +6,7 @@ VOLUME /data
 WORKDIR /data
 
 RUN apt-get update
-RUN apt-get install python
+RUN apt-get install python -f
 
 RUN npm install -g local-npm
 
